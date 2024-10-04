@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <title>atom-using-react</title>
+  <link rel="stylesheet" href="./src/main.css" />
+  <script type="module" src="./src/main.tsx"></script>
+</head>
+
+<body>
+
+  <h2>atom-using-react</h2>
+
+  <div style="text-align: end;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;">
+    <atom-switch-darkmode default="light"></atom-switch-darkmode>
+  </div>
+
+
+  <h3>Range</h3>
+
+  <atom-range id="btn0" min="1" max="60" value="20" bind="num"></atom-range>
+  <p>
+    Direct state-subscriber: <span id="state0out" style="color:#09f">n/a</span>
+    <br />
+    A "monitor" for the state-value
+    <code>num</code>: <atom-binding bind="num"></atom-binding>
+    <br />
+    Output from change-event: <span id="btn0out" style="color:rgb(0, 110, 255)">non</span>
+  </p>
+
+
+  <h3>Button</h3>
+
+  <atom-button label="dette er en knap"></atom-button>
+  <atom-button variant="normal" label="Normal"></atom-button>
+  <atom-button variant="primary" label="Primary"></atom-button>
+  <atom-button variant="destructive" label="Destructive"></atom-button>
+  <atom-button variant="constructive" label="Constructive"></atom-button>
+  <atom-button variant="subtle" label="Subtle"></atom-button>
+  <atom-button variant="outline" label="Outline"></atom-button>
+
+  <div id="app">app</div>
+
+</body>
+
+</html>

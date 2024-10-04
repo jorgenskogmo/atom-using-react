@@ -1,0 +1,18 @@
+/**
+ * app specific styling
+*/
+
+body {
+  margin:0;
+  padding: 1rem 2rem;
+}
+
+h1, [role="heading"] {
+  /* fluid */
+  font: 700 clamp(1rem, 10vw, 10rem) / clamp(1rem, 10vw, 9rem) var(--atom-font-family-default);
+}
+
+h2, [role="subheading"] {
+  font: var(--atom-font-subhead);
+  opacity: 0.75;
+}
