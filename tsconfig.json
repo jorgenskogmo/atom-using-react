@@ -20,7 +20,8 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src",
+    "node_modules/atom-lit/*.d.ts" 
   ]
 }
 
